@@ -12,7 +12,7 @@ app.use(express.static("public"))
 
 main().catch(err => console.log(err));
 async function main() {
-    await mongoose.connect('dbURL');
+    await mongoose.connect(dbURL);
 
     // mongodb+srv://dagmfre:dag%4013645440@firstcluster.rkrulns.mongodb.net/todolistDB
     // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
