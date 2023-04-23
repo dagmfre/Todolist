@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const _ = require('lodash');
 require('dotenv').config();
 
-const dbURL =  process.env.DB_USERNAME;
+const dbURL =  process.env.MONGODB_ATLAS_URL;
 
 const app = express();
 app.set("view engine", "ejs");
